@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Notes App</h1>
+      </div>
+    </header>
+
+    <main>
+      <div id="loadingIndicator" class="loading-indicator">Loading...</div>
+
+      <div id="app">
+        <title-input></title-input>
+        <description-textarea></description-textarea>
+        <date-input></date-input>
+        <div class="input-container">
+          <form id="addNoteForm" class="addNoteButton">
+            <button type="submit" id="addNoteButton">Add Note</button>
+          </form>
+        </div>
+        <div class="active-notes">
+          <h2>Active Notes</h2>
+          <div id="activeNotesContainer" class="notesContainer"></div>
+        </div>
+
+        <div class="archived-notes">
+          <h2>Archived Notes</h2>
+          <div id="archivedNotesContainer" class="notesContainer"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
